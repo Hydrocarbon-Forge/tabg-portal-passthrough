@@ -1,0 +1,32 @@
+# Game files — never commit (universal-modder CONTRIBUTING rule)
+games/
+
+# Patched/backup server binaries (G.1) — binaries, keep out of git
+*.orig
+*.patched.tmp
+**/Assembly-CSharp.dll
+
+# Local-only gate / config written by the human
+LOCAL_ONLY_GATE.txt
+TABG_AC_CLEARANCE.txt
+local.json
+local_only.json
+
+# .NET build output
+**/bin/
+**/obj/
+*.user
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# BepInEx / plugin local reference libs (copied on the Windows box, never committed)
+src/tabg_plugin/libs/
+src/portal_plugin/sdk_stubs/vendor/
+
+# Test / tool artifacts
+tests/*.local.json
+/tmp_frames/

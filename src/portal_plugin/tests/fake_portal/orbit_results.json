@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "url": "ws://127.0.0.1:25600",
+  "target_hz": 60.0,
+  "achieved_hz": 60.0,
+  "seconds": 3.0,
+  "sent": 180,
+  "received": 180,
+  "lost": 0,
+  "rtt_ms": {
+    "p50": 3.671,
+    "p90": 3.889,
+    "p99": 8.311,
+    "min": 3.415,
+    "max": 12.026,
+    "mean": 3.817
+  },
+  "p99_budget_ms": 16.0,
+  "hub_hello": {
+    "t": "hello",
+    "role": "hub",
+    "ver": 1,
+    "peers": {
+      "host": 0,
+      "guest": 1,
+      "tool": 1
+    },
+    "caps": [
+      "relay",
+      "ring",
+      "backpressure"
+    ]
+  }
+}

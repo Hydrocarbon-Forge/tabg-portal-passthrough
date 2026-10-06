@@ -1,0 +1,9 @@
+// TABGxPortal passthrough guest — Source server-plugin descriptor.
+// Placed at portal/addons/passthrough.vdf; "file" is relative to the game dir
+// and WITHOUT the .dll extension (engine appends it). Loads
+// portal/addons/passthrough.dll at map load, or via `plugin_load addons/passthrough`
+// from the console (recon/portal-notes.md §2).
+"Plugin"
+{
+	"file"	"addons/passthrough"
+}

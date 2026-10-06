@@ -1,0 +1,9 @@
+{
+  "_comment": "Portal test-chamber dimensions used to build the invisible layer-29 (OnlyLocalPlayer) collider set on F8. ASSUMPTION: Portal chamber geometry was not measurable from the Portal game files on this box, so these are the standard-test-chamber dims from TASK_BUILD D (21 x 16 x ~11 units). Units are TABG/Unity metres (env.md: 1 Unity unit = 1 m). size = [width (X), depth (Z), height (Y)]. wall_thickness and the ceiling toggle are ours. Re-measure on Windows with UnityExplorer/AssetRipper if exactness matters.",
+  "size": [21.0, 16.0, 11.0],
+  "wall_thickness": 0.5,
+  "with_ceiling": true,
+  "with_floor": true,
+  "floor_at_feet": true,
+  "layer": 29
+}

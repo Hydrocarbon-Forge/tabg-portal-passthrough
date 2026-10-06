@@ -1,0 +1,37 @@
+{
+  "_comment": "Example TABG×Portal shot list. Positions are [right, forward, up] metres from origin in the frame of h_in. Run: python3 tools/director.py run tools/shots/demo.json",
+  "origin": [0.0, 0.0, 0.0],
+  "h_in": 0.0,
+  "steps": [
+    ["time", 14, 0],
+    ["weather", "Clear"],
+    ["mark", "intro"],
+    ["teleport", [0, -6, 0], 0],
+    ["look", 0, 0, 0.5],
+    ["wait", 1.0],
+
+    ["mark", "place_portals"],
+    ["portal_pair", [-2, 2, 0], [1, 0, 0], [2, 2, 0], [-1, 0, 0]],
+    ["wait", 0.6],
+
+    ["mark", "enter_chamber"],
+    ["look", -20, -5, 0.4],
+    ["slot", 1],
+    ["event_wait", "portal_warp", 6.0],
+
+    ["mark", "turret"],
+    ["turret_fire", 0],
+    ["turret_fire", 1],
+    ["event_wait", "turret_hit", 4.0],
+
+    ["mark", "cube"],
+    ["cube_launch", [0.0, 0.0, 6.0]],
+    ["event_wait", "cube_through_portal", 5.0],
+
+    ["mark", "cake"],
+    ["cake", "revealed"],
+    ["look", 10, 5, 0.6],
+    ["wait", 2.0],
+    ["mark", "end"]
+  ]
+}

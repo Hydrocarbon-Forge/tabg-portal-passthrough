@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    TABG x Portal passthrough - host plugin (Slice D + G.2 shims).
+    SOURCE ONLY. This project is NEVER installed by this build; it only compiles.
+
+    References come from three places:
+      1. NuGet         - BepInEx.Core, HarmonyX, Microsoft.NETFramework.ReferenceAssemblies (net472).
+      2. Managed-by-path - the real Unity + game assemblies, referenced by ABSOLUTE path out of
+                           the game install's Managed/ folder. Reading those DLLs is allowed;
+                           we do NOT copy them into the repo and they are gitignored.
+      3. (none stubbed) - everything resolved from 1 or 2 on this box.
+
+    The absolute Managed path differs between this Linux build box and the Windows gaming box.
+    It is overridable with the `ManagedDir` MSBuild property:
+        dotnet build -p:ManagedDir=/abs/path/to/..._Data/Managed
+    On the Windows box, build.ps1 / build.bat set it to the local ignored libs\ folder.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <AssemblyName>TabgPortalPassthrough</AssemblyName>
+    <RootNamespace>TabgPortal</RootNamespace>
+    <Product>TABG Portal Passthrough (host plugin)</Product>
+    <Version>0.1.0</Version>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <DebugType>portable</DebugType>
+    <!-- Unity game assemblies are unsigned; don't let that trip the build. -->
+    <NoWarn>$(NoWarn);CS0436;MSB3277;CS1701</NoWarn>
+    <!-- Default Managed dir = this Linux recon box's game copy (reading is allowed). -->
+    <ManagedDir Condition="'$(ManagedDir)' == ''">$(MSBuildThisFileDirectory)../../games/TotallyAccurateBattlegrounds/TotallyAccurateBattlegrounds_Data/Managed</ManagedDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.Core" Version="5.4.21" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0" />
+    <PackageReference Include="HarmonyX" Version="2.10.1" />
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!-- .NET Framework BCL bits we lean on (resolved from the net472 reference pack). -->
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+
+  <!-- Unity engine modules + game assemblies, referenced by ABSOLUTE path. Never copied, never committed. -->
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>$(ManagedDir)/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ManagedDir)/UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(ManagedDir)/UnityEngine.PhysicsModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(ManagedDir)/UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(ManagedDir)/UnityEngine.InputLegacyModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>$(ManagedDir)/UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(ManagedDir)/UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ManagedDir)/Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(ManagedDir)/Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- Ship the config templates + shader source next to the DLL on build. -->
+  <ItemGroup>
+    <None Include="chamber.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="local.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="local_only.json.example" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Shaders/PortalPass.cs.hlsl" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

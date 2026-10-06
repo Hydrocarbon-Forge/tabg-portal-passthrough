@@ -1,0 +1,4 @@
+{
+  "_comment": "Rename this file to local_only.json (drop .example) AND create an empty LOCAL_ONLY_GATE.txt next to the plugin DLL to arm the EAC/auth shims. Both are required. This plugin is for the owner's OWN LAN / single-machine self-hosted TABG server running with AntiCheat=false. The client-side EAC shims exist ONLY so your own client can connect to that local no-EAC server. Pointing a shimmed client at an official/community server is what gets flagged - don't.",
+  "i_understand_this_is_local_only": true
+}

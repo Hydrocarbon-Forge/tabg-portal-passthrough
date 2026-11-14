@@ -8,6 +8,52 @@
 
 # TABG × Portal: Passthrough Mod
 
+<p align="center">
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/stargazers"><img alt="stars" src="https://img.shields.io/github/stars/Hydrocarbon-Forge/tabg-portal-passthrough?style=social"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/forks"><img alt="forks" src="https://img.shields.io/github/forks/Hydrocarbon-Forge/tabg-portal-passthrough?style=social"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/watchers"><img alt="watchers" src="https://img.shields.io/github/watchers/Hydrocarbon-Forge/tabg-portal-passthrough?style=social"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/issues"><img alt="open issues" src="https://img.shields.io/github/issues/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/issues?q=is%3Aclosed"><img alt="closed issues" src="https://img.shields.io/github/issues-closed/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/pulls"><img alt="open pull requests" src="https://img.shields.io/github/issues-pr/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/pulls?q=is%3Apr+is%3Aclosed"><img alt="closed pull requests" src="https://img.shields.io/github/issues-pr-closed/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/commits"><img alt="last commit" src="https://img.shields.io/github/last-commit/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+</p>
+<p align="center">
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/commits"><img alt="commits per year" src="https://img.shields.io/github/commit-activity/Hydrocarbon-Forge/tabg-portal-passthrough/y"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/graphs/contributors"><img alt="contributors" src="https://img.shields.io/github/contributors/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="repo size" src="https://img.shields.io/github/repo-size/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="code size" src="https://img.shields.io/github/languages/code-size/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="top language" src="https://img.shields.io/github/languages/top/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="language count" src="https://img.shields.io/github/languages/count/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/Hydrocarbon-Forge/tabg-portal-passthrough"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough#readme"><img alt="README" src="https://img.shields.io/badge/README-present-2ea44f?logo=readme&logoColor=white"></a>
+</p>
+<p align="center">
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="tests" src="https://img.shields.io/badge/tests-test_files_in_repo-2ea44f"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=c%2B%2B"><img alt="language: C++" src="https://img.shields.io/badge/C++-language-00599C?logo=cplusplus&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=c%23"><img alt="language: C#" src="https://img.shields.io/badge/C%23-language-239120?logo=csharp&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=python"><img alt="language: Python" src="https://img.shields.io/badge/Python-language-3776AB?logo=python&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=shell"><img alt="language: Shell" src="https://img.shields.io/badge/Shell-language-4EAA25?logo=gnubash&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=hlsl"><img alt="language: HLSL" src="https://img.shields.io/badge/HLSL-language-5D5D5D"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=c"><img alt="language: C" src="https://img.shields.io/badge/C-language-A8B9CC?logo=c&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=batchfile"><img alt="language: Batchfile" src="https://img.shields.io/badge/Batchfile-language-C1F12E"></a>
+</p>
+<p align="center">
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough/search?l=powershell"><img alt="language: PowerShell" src="https://img.shields.io/badge/PowerShell-language-5391FE?logo=powershell&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains Markdown" src="https://img.shields.io/badge/Markdown-files-000000?logo=markdown&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains JSON" src="https://img.shields.io/badge/JSON-files-000000?logo=json&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains gitignore" src="https://img.shields.io/badge/gitignore-files-F05032?logo=git&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains Shell_script" src="https://img.shields.io/badge/Shell__script-files-4EAA25?logo=gnubash&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains C#" src="https://img.shields.io/badge/C%23-files-239120?logo=csharp&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains PowerShell" src="https://img.shields.io/badge/PowerShell-files-5391FE?logo=powershell&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains Batch" src="https://img.shields.io/badge/Batch-files-C1F12E"></a>
+</p>
+<p align="center">
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="contains Python" src="https://img.shields.io/badge/Python-files-3776AB?logo=python&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="Git" src="https://img.shields.io/badge/Git-version_control-F05032?logo=git&logoColor=white"></a>
+<a href="https://github.com/Hydrocarbon-Forge/tabg-portal-passthrough"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-hosted-181717?logo=github&logoColor=white"></a>
+</p>
+
 Real Portal (Source, hidden window) drawn into Totally Accurate Battlegrounds
 (Landfall, Unity, visible window), composited against TABG's depth buffer, with
 two-way interaction bridged over a local WebSocket.

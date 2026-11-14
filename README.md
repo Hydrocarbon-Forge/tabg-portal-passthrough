@@ -1,3 +1,11 @@
+<p align="center"><b>Real Portal composited into Totally Accurate Battlegrounds, with a two-way WebSocket bridge.</b></p>
+
+<p align="center">
+<a href="LICENSE"><img alt="license: MIT" src="https://img.shields.io/badge/license-MIT-blue"></a>
+</p>
+
+---
+
 # TABG × Portal: Passthrough Mod
 
 Real Portal (Source, hidden window) drawn into Totally Accurate Battlegrounds
